@@ -1,5 +1,4 @@
 var express = require ('express');
-var serverless = require("serverless-http");
 var session = require ('express-session');
 var cookie = require ('cookie-parser');
 var path = require ('path');
@@ -12,7 +11,7 @@ var crypto = require ('crypto');
 var expressValidator = require ('express-validator');
 var  sweetalert = require('sweetalert2');
 var app = express();
-const router = express.Router();
+
 
 
 
@@ -59,8 +58,6 @@ var server =app.listen(3000 , function(){
     console.log('server started');
 });
 
-app.use("/.netlify/functions/app", router);
-module.exports.handler = serverless(app);
 
 app.use('/login' ,login);
 app.use('/home' , home);
