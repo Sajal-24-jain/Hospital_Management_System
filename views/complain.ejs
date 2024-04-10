@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo89.png">
+  <title>Complain</title>
+</head>
+<body>
+  
+
+
+<div class="container">
+  <div class="content">
+    
+    <div class="right-side">
+      <div class="topic-text">Have Any Complain? Send Us</div>
+    <form action="/complain" method="POST">
+      <div class="input-box">
+        <label for="fname">First Name</label>
+        <input type="text"  id="fname" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="input-box">
+        <label for="fname">Email</label>
+        <input type="text"   id="" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="input-box message-box">
+        <label for="">Message</label>
+      <textarea id="" name="message" placeholder="Write something.." style="height:200px"></textarea>
+        
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="button">
+        <input type="submit" value="Submit" >
+      </div>
+    </form>
+  </div>
+  </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+<style>
+  /* Style inputs with type="text", select elements and textareas */
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 40%;
+  height: 90%;
+  background: #fff;
+  border-radius: 6px;
+  
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .content{
+  display: flex;
+  margin-top: 120px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container .content .right-side{
+  width: 75%;
+  margin-left: 0px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #007bff;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 20px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 60%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+  margin-top: 10px;
+}
+.right-side .message-box{
+  min-height: 5px;
+}
+.right-side .input-box textarea{
+  padding-top: 5px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: -16px;
+  margin-bottom: 50px;
+}
+.right-side .button input[type="submit"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #ad1b1bd1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #007bff;
+}
+
+@media (max-width: 950px) {
+  .container{
+    width: 100%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 100%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ 
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+
+
+</style>
