@@ -53,7 +53,7 @@ app.use(cookie());
 //app.use(expressValidator());
 
 
-var server =app.listen(3000 , function(){
+var server =app.listen(3306 , function(){
 
     console.log('server started');
 });
