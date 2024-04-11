@@ -18,10 +18,10 @@ router.get('/', function(req ,res){
 
 var con = mysql.createConnection({
 
-    host : 'sajaled.mysql.polardb.ap-south-1.rds.aliyuncs.com',
-    user : 'sajaldb1',
-    password : 'sajal@123',
-    database : 'sjdb'
+  host: process.env.MYSQL_ADDON_HOST,
+  user: process.env.MYSQL_ADDON_USER,
+  password: process.env.MYSQL_ADDON_PASSWORD,
+  database: process.env.MYSQL_ADDON_DB
 });
 
 router.use(session({
