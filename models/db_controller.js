@@ -3,10 +3,10 @@ var express = require("express");
 var router = express.Router();
 
 var con = mysql.createConnection({
-  host: 'sql6.freesqldatabase.com',
-  user: 'sql6698021',
-  password: 'IzLlujkgH9',
-  database: 'sql6698021'
+  host: process.env.MYSQL_ADDON_HOST,
+  user: process.env.MYSQL_ADDON_USER,
+  password: process.env.MYSQL_ADDON_PASSWORD,
+  database: process.env.MYSQL_ADDON_DB
 });
 
 con.connect(function (err) {
