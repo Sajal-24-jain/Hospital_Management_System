@@ -57,7 +57,7 @@ router.post(
         token +
         `</li>
             </ul>
-            <p>verify Link: <a href="http://localhost:3000/verify">Verify</a></p>
+            <p>verify Link: <a href="/verify">Verify</a></p>
             
             <p><strong>This is an automatically generated mail. Please do not reply back.</strong></p>
             
